@@ -54,12 +54,12 @@
       cel.addEventListener("input", function () {
         let c = this.value;
         let f = (c * 9) / 5 + 32;
-        fah.value = f;
+        fah.value = Math.round(f);
       });
       fah.addEventListener("input", function () {
         let f = this.value;
         let c = ((f - 32) * 5) / 9;
-        cel.value = c;
+        cel.value = Math.round(c);
       });
     </script>
   </body>
